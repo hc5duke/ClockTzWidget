@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">Clock Tz Widget</string>
+
+    
+    
+    
+    
+    <string name="widget_name">ClockTz</string>
+
+    <string name="widget_loading">Loading</string>
+    <string name="widget_error">Error!</string>
+
+    
+    
+<string name="pref_home_page_title">Home Page</string>
+<string name="pref_home_page_summary">http://choibean.com/projects/clocktz</string>
+<string name="pref_github_page_title">GitHub Repository</string>
+<string name="pref_github_page_summary">http://wiki.github.com/hc5duke/ClockTzWidget</string>
+<string name="pref_cat_timezone_title">Time Zone</string>
+<string name="pref_update_title">Update</string>
+<string name="pref_update_summary">Toggle Auto Update</string>
+<string name="pref_timezone_dialog_title">List of Time Zones</string>
+<string name="pref_timezone_name_dialog_title">Name</string>
+<string name="pref_format_title">Time Format</string>
+<string name="pref_format_summary">Time Format to Display</string>
+<string name="pref_timezone_name_title">Time Zone Name</string>
+<string name="pref_timezone_name_summary">Time Zone Name</string>
+<string name="pref_timezone_title">Time Zone</string>
+<string name="pref_timezone_summary">+/- Offset</string>
+<string name="pref_help_title">Help</string>
+</resources>
