@@ -12,7 +12,6 @@ import android.appwidget.AppWidgetManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.IBinder;
 import android.widget.RemoteViews;
 
@@ -52,11 +51,9 @@ public class UpdateService extends Service {
 		updateViews.setTextViewText(R.id.word_title, timezoneText[timezoneText.length-1]);
 		updateViews.setTextViewText(R.id.definition, format.format(date));
 
-		Intent defineIntent = new Intent(Intent.ACTION_VIEW, Uri
-				.parse("http://choibean.com"));
-		PendingIntent pendingIntent = PendingIntent.getActivity(context,
-				0 /* no requestCode */, defineIntent, 0 /* no flags */);
-		updateViews.setOnClickPendingIntent(R.id.widget, pendingIntent);
+        Intent detailIntent = new Intent(context, PreferencesFromXml.class);
+        PendingIntent pending = PendingIntent.getActivity(context, 0, detailIntent, 0);
+        updateViews.setOnClickPendingIntent(R.id.widget, pending);
 		return updateViews;
 	}
 
